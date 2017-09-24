@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests">
+  <test name="Parallel">
+    <classes>
+      <class name="ExecutionEngine.DriverScript" >
+      	 <methods>
+      	<include name="Test_Case_1" />
+      	<include name="Test_Case_3" />
+      	</methods> 
+      </class>
+    </classes>
+    </test>
+     <test name="Parallel2">
+    <classes>
+      <class name="ExecutionEngine.DriverScript">
+      <methods>
+      	<include name="Test_Case_2" />
+      	</methods>
+       </class>
+    </classes>
+  </test> <!-- Parallel -->
+</suite> <!-- Suite -->
